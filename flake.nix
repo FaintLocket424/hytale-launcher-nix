@@ -1,12 +1,12 @@
 {
   description = "Hytale Launcher - Official launcher for Hytale game";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
   outputs =
-    {
-      self,
-      nixpkgs,
+    { self
+    , nixpkgs
+    ,
     }:
     let
       inherit (nixpkgs) lib;
